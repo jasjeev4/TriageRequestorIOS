@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RequestView: View {
+    @EnvironmentObject var viewModel: RequestorViewModel
+    
     var body: some View {
         VStack {
             TranscriptView()

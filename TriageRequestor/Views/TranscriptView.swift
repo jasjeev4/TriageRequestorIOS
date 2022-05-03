@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct TranscriptView: View {
+    @EnvironmentObject var viewModel: RequestorViewModel
+    
     var body: some View {
         
         VStack {
             Spacer()
             
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text(viewModel.transcript)
             
             Spacer()
         }

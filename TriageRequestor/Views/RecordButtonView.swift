@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecordButtonView: View {
+    @EnvironmentObject var viewModel: RequestorViewModel
+    
     @State private var animationAmount: CGFloat = 1
     @State private var buttonTapped: Bool = false
     
@@ -16,6 +18,10 @@ struct RecordButtonView: View {
         Button(action: {
             // called after button tap complete
             self.buttonTapped = false
+            viewModel.speechRecognizer.stopRecording()
+            
+            // submit to backend 
+            
         }) {
             Image(systemName: "mic.circle.fill")
                 .resizable()
@@ -27,6 +33,7 @@ struct RecordButtonView: View {
         .simultaneousGesture((LongPressGesture(minimumDuration: 0.1).onEnded({ _ in
             // actions during button hold
             self.buttonTapped = true
+            viewModel.speechRecognizer.record(to: $viewModel.transcript)
         })))
     }
 }

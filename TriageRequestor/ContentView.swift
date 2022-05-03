@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         RequestView()
+            .environmentObject(viewModel)
         
         
 //        Text(viewModel.transcript)
