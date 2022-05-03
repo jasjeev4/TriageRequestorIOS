@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7062088428216EF500ABF84C /* TriageRequestorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062088328216EF500ABF84C /* TriageRequestorApp.swift */; };
+		7062088628216EF500ABF84C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062088528216EF500ABF84C /* ContentView.swift */; };
+		7062088828216EF600ABF84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7062088728216EF600ABF84C /* Assets.xcassets */; };
+		7062088B28216EF600ABF84C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7062088A28216EF600ABF84C /* Preview Assets.xcassets */; };
+		7062089528216EF600ABF84C /* TriageRequestorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062089428216EF600ABF84C /* TriageRequestorTests.swift */; };
+		7062089F28216EF600ABF84C /* TriageRequestorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062089E28216EF600ABF84C /* TriageRequestorUITests.swift */; };
+		706208A128216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208A028216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7062089128216EF600ABF84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7062087828216EF500ABF84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7062087F28216EF500ABF84C;
+			remoteInfo = TriageRequestor;
+		};
+		7062089B28216EF600ABF84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7062087828216EF500ABF84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7062087F28216EF500ABF84C;
+			remoteInfo = TriageRequestor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7062088028216EF500ABF84C /* TriageRequestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriageRequestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7062088328216EF500ABF84C /* TriageRequestorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageRequestorApp.swift; sourceTree = "<group>"; };
+		7062088528216EF500ABF84C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7062088728216EF600ABF84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7062088A28216EF600ABF84C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7062089028216EF600ABF84C /* TriageRequestorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriageRequestorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7062089428216EF600ABF84C /* TriageRequestorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageRequestorTests.swift; sourceTree = "<group>"; };
+		7062089A28216EF600ABF84C /* TriageRequestorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriageRequestorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7062089E28216EF600ABF84C /* TriageRequestorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageRequestorUITests.swift; sourceTree = "<group>"; };
+		706208A028216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageRequestorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7062087D28216EF500ABF84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062088D28216EF600ABF84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062089728216EF600ABF84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7062087728216EF500ABF84C = {
+			isa = PBXGroup;
+			children = (
+				7062088228216EF500ABF84C /* TriageRequestor */,
+				7062089328216EF600ABF84C /* TriageRequestorTests */,
+				7062089D28216EF600ABF84C /* TriageRequestorUITests */,
+				7062088128216EF500ABF84C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7062088128216EF500ABF84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7062088028216EF500ABF84C /* TriageRequestor.app */,
+				7062089028216EF600ABF84C /* TriageRequestorTests.xctest */,
+				7062089A28216EF600ABF84C /* TriageRequestorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7062088228216EF500ABF84C /* TriageRequestor */ = {
+			isa = PBXGroup;
+			children = (
+				7062088328216EF500ABF84C /* TriageRequestorApp.swift */,
+				7062088528216EF500ABF84C /* ContentView.swift */,
+				7062088728216EF600ABF84C /* Assets.xcassets */,
+				7062088928216EF600ABF84C /* Preview Content */,
+			);
+			path = TriageRequestor;
+			sourceTree = "<group>";
+		};
+		7062088928216EF600ABF84C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7062088A28216EF600ABF84C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7062089328216EF600ABF84C /* TriageRequestorTests */ = {
+			isa = PBXGroup;
+			children = (
+				7062089428216EF600ABF84C /* TriageRequestorTests.swift */,
+			);
+			path = TriageRequestorTests;
+			sourceTree = "<group>";
+		};
+		7062089D28216EF600ABF84C /* TriageRequestorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7062089E28216EF600ABF84C /* TriageRequestorUITests.swift */,
+				706208A028216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift */,
+			);
+			path = TriageRequestorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7062087F28216EF500ABF84C /* TriageRequestor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706208A428216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestor" */;
+			buildPhases = (
+				7062087C28216EF500ABF84C /* Sources */,
+				7062087D28216EF500ABF84C /* Frameworks */,
+				7062087E28216EF500ABF84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriageRequestor;
+			productName = TriageRequestor;
+			productReference = 7062088028216EF500ABF84C /* TriageRequestor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7062088F28216EF600ABF84C /* TriageRequestorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706208A728216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestorTests" */;
+			buildPhases = (
+				7062088C28216EF600ABF84C /* Sources */,
+				7062088D28216EF600ABF84C /* Frameworks */,
+				7062088E28216EF600ABF84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7062089228216EF600ABF84C /* PBXTargetDependency */,
+			);
+			name = TriageRequestorTests;
+			productName = TriageRequestorTests;
+			productReference = 7062089028216EF600ABF84C /* TriageRequestorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7062089928216EF600ABF84C /* TriageRequestorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706208AA28216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestorUITests" */;
+			buildPhases = (
+				7062089628216EF600ABF84C /* Sources */,
+				7062089728216EF600ABF84C /* Frameworks */,
+				7062089828216EF600ABF84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7062089C28216EF600ABF84C /* PBXTargetDependency */,
+			);
+			name = TriageRequestorUITests;
+			productName = TriageRequestorUITests;
+			productReference = 7062089A28216EF600ABF84C /* TriageRequestorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7062087828216EF500ABF84C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7062087F28216EF500ABF84C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					7062088F28216EF600ABF84C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7062087F28216EF500ABF84C;
+					};
+					7062089928216EF600ABF84C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7062087F28216EF500ABF84C;
+					};
+				};
+			};
+			buildConfigurationList = 7062087B28216EF500ABF84C /* Build configuration list for PBXProject "TriageRequestor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7062087728216EF500ABF84C;
+			productRefGroup = 7062088128216EF500ABF84C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7062087F28216EF500ABF84C /* TriageRequestor */,
+				7062088F28216EF600ABF84C /* TriageRequestorTests */,
+				7062089928216EF600ABF84C /* TriageRequestorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7062087E28216EF500ABF84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7062088B28216EF600ABF84C /* Preview Assets.xcassets in Resources */,
+				7062088828216EF600ABF84C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062088E28216EF600ABF84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062089828216EF600ABF84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7062087C28216EF500ABF84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7062088628216EF500ABF84C /* ContentView.swift in Sources */,
+				7062088428216EF500ABF84C /* TriageRequestorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062088C28216EF600ABF84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7062089528216EF600ABF84C /* TriageRequestorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7062089628216EF600ABF84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7062089F28216EF600ABF84C /* TriageRequestorUITests.swift in Sources */,
+				706208A128216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7062089228216EF600ABF84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7062087F28216EF500ABF84C /* TriageRequestor */;
+			targetProxy = 7062089128216EF600ABF84C /* PBXContainerItemProxy */;
+		};
+		7062089C28216EF600ABF84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7062087F28216EF500ABF84C /* TriageRequestor */;
+			targetProxy = 7062089B28216EF600ABF84C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		706208A228216EF600ABF84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		706208A328216EF600ABF84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		706208A528216EF600ABF84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TriageRequestor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		706208A628216EF600ABF84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TriageRequestor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		706208A828216EF600ABF84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriageRequestor.app/TriageRequestor";
+			};
+			name = Debug;
+		};
+		706208A928216EF600ABF84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriageRequestor.app/TriageRequestor";
+			};
+			name = Release;
+		};
+		706208AB28216EF600ABF84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriageRequestor;
+			};
+			name = Debug;
+		};
+		706208AC28216EF600ABF84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acvauctions.TriageRequestorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TriageRequestor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7062087B28216EF500ABF84C /* Build configuration list for PBXProject "TriageRequestor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706208A228216EF600ABF84C /* Debug */,
+				706208A328216EF600ABF84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706208A428216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706208A528216EF600ABF84C /* Debug */,
+				706208A628216EF600ABF84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706208A728216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706208A828216EF600ABF84C /* Debug */,
+				706208A928216EF600ABF84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706208AA28216EF600ABF84C /* Build configuration list for PBXNativeTarget "TriageRequestorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706208AB28216EF600ABF84C /* Debug */,
+				706208AC28216EF600ABF84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7062087828216EF500ABF84C /* Project object */;
+}
