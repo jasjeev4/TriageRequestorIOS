@@ -13,6 +13,7 @@ import SwiftUI
 /// A helper for transcribing speech to text using AVAudioEngine.
 class SpeechRecognizer {
     private var lastModified = Date().timeIntervalSince1970
+    private var checkTimer:Timer? = nil
     
     private class SpeechAssist {
         var audioEngine: AVAudioEngine?
@@ -79,10 +80,16 @@ class SpeechRecognizer {
                 }
                 // relay(speech, message: "Preparing audio engine")
                 audioEngine.prepare()
+                lastModified = Date().timeIntervalSince1970
+                //checkComplete()
                 try audioEngine.start()
                 assistant.recognitionTask = assistant.speechRecognizer?.recognitionTask(with: recognitionRequest) { (result, error) in
                     var isFinal = false
                     if let result = result {
+                        let changedTime = Date().timeIntervalSince1970
+                        let delta = lastModified.distance(to: changedTime)
+                        //print(delta)
+                        lastModified = changedTime
                         relay(speech, message: result.bestTranscription.formattedString)
                         isFinal = result.isFinal
                     }
@@ -98,6 +105,50 @@ class SpeechRecognizer {
                 assistant.reset()
             }
         }
+    }
+    
+    func checkComplete() {
+        // check for 3.0 second pauses
+        
+        let changedTime = Date().timeIntervalSince1970
+        let delta = lastModified.distance(to: changedTime)
+        print(delta)
+        if(delta>3.0) {
+            // submit the recording
+            submitTranscript()
+
+            // reset assistant
+            assistant.reset()
+        }
+        else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                self.checkComplete()
+            }
+        }
+    }
+        
+//        checkTimer = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { [self] timer in
+//            let changedTime = Date().timeIntervalSince1970
+//            let delta = lastModified.distance(to: changedTime)
+//            print(delta)
+//            if(delta>1.2) {
+//                // end the timer
+//                timer.invalidate()
+//
+//                // submit the recording
+//                submitTranscript()
+//
+//                // reset assistant
+//                assistant.reset()
+//            }
+//
+//            lastModified = changedTime
+//        }
+    
+    
+    func submitTranscript() {
+        print("Submit called")
+        // check for transcript not blank
     }
     
     /// Stop transcribing audio.

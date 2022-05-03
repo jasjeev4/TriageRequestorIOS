@@ -11,11 +11,15 @@ struct ContentView: View {
     @StateObject private var viewModel = RequestorViewModel()
     
     var body: some View {
-        Text(viewModel.transcript)
-            .padding()
-            .onAppear {
-                viewModel.speechRecognizer.record(to: $viewModel.transcript)
-            }
+        
+        RequestView()
+        
+        
+//        Text(viewModel.transcript)
+//            .padding()
+//            .onAppear {
+//                viewModel.speechRecognizer.record(to: $viewModel.transcript)
+//            }
     }
 }
 

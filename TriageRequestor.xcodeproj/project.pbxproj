@@ -16,6 +16,9 @@
 		706208A128216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208A028216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift */; };
 		706208B12821722100ABF84C /* RequestorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208B02821722100ABF84C /* RequestorViewModel.swift */; };
 		706208B4282173D300ABF84C /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208B3282173D300ABF84C /* SpeechHelper.swift */; };
+		706208B72821974B00ABF84C /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208B62821974B00ABF84C /* RequestView.swift */; };
+		706208BB282198EA00ABF84C /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208BA282198EA00ABF84C /* TranscriptView.swift */; };
+		706208BD2821992B00ABF84C /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208BC2821992B00ABF84C /* RecordButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		706208A028216EF600ABF84C /* TriageRequestorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageRequestorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		706208B02821722100ABF84C /* RequestorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestorViewModel.swift; sourceTree = "<group>"; };
 		706208B3282173D300ABF84C /* SpeechHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
+		706208B52821866400ABF84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		706208B62821974B00ABF84C /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		706208BA282198EA00ABF84C /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
+		706208BC2821992B00ABF84C /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +105,7 @@
 		7062088228216EF500ABF84C /* TriageRequestor */ = {
 			isa = PBXGroup;
 			children = (
+				706208B52821866400ABF84C /* Info.plist */,
 				706208B2282173C900ABF84C /* Utils */,
 				706208AF2821720700ABF84C /* Views */,
 				706208AE282171FD00ABF84C /* ViewModels */,
@@ -153,6 +161,9 @@
 		706208AF2821720700ABF84C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				706208B62821974B00ABF84C /* RequestView.swift */,
+				706208BA282198EA00ABF84C /* TranscriptView.swift */,
+				706208BC2821992B00ABF84C /* RecordButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,9 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706208B72821974B00ABF84C /* RequestView.swift in Sources */,
 				706208B12821722100ABF84C /* RequestorViewModel.swift in Sources */,
 				706208B4282173D300ABF84C /* SpeechHelper.swift in Sources */,
 				7062088628216EF500ABF84C /* ContentView.swift in Sources */,
+				706208BB282198EA00ABF84C /* TranscriptView.swift in Sources */,
+				706208BD2821992B00ABF84C /* RecordButtonView.swift in Sources */,
 				7062088428216EF500ABF84C /* TriageRequestorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +474,7 @@
 				DEVELOPMENT_TEAM = N52AYCDP9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriageRequestor/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Recognize speech for voice search";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Recognize speech for voice search";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -491,6 +506,7 @@
 				DEVELOPMENT_TEAM = N52AYCDP9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriageRequestor/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Recognize speech for voice search";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Recognize speech for voice search";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
