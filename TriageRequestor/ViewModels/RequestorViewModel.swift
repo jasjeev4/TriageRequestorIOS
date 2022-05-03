@@ -14,6 +14,8 @@ final class RequestorViewModel: ObservableObject {
     
     private var email: String?
     
+    @Published public var user: String?
+    
     @Published public var speechRecognizer = SpeechRecognizer()
     
     @Published public var transcript = ""

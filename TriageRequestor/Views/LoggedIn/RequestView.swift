@@ -32,7 +32,19 @@ struct RequestView: View {
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         })
                 }
+                
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                    Button {
+                    } label: {
+                        Image(viewModel.user!)
+                            .resizable()
+                            .frame(width: 30.0, height: 30.0)
+                            .clipShape(Circle())
+                        
+                    }
+                }
             }
+            
         }
     }
 }

@@ -15,6 +15,8 @@ struct ProfileButtonView: View {
     var body: some View {
         Button(action: {
             // called after button tap complete
+            viewModel.user = imageName
+            
             viewModel.loginEmail(email: nameToEmail[imageName]!)
         }) {
             Image(imageName)
