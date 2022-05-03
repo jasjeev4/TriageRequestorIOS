@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = RequestorViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(viewModel.transcript)
             .padding()
+            .onAppear {
+                viewModel.speechRecognizer.record(to: $viewModel.transcript)
+            }
     }
 }
 
