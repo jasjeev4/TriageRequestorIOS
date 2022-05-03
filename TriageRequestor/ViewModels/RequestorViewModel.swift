@@ -8,6 +8,9 @@
 import Foundation
 
 final class RequestorViewModel: ObservableObject {
+    @Published public var signedIn = false
+    
+    
     @Published public var speechRecognizer = SpeechRecognizer()
     
     @Published public var transcript = ""

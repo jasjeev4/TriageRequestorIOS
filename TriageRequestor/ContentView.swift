@@ -12,15 +12,14 @@ struct ContentView: View {
     
     var body: some View {
         
-        RequestView()
-            .environmentObject(viewModel)
-        
-        
-//        Text(viewModel.transcript)
-//            .padding()
-//            .onAppear {
-//                viewModel.speechRecognizer.record(to: $viewModel.transcript)
-//            }
+        if(viewModel.signedIn) {
+            RequestView()
+                .environmentObject(viewModel)
+        }
+        else {
+            LoginView()
+                .environmentObject(viewModel)
+        }
     }
 }
 

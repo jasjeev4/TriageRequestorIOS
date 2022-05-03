@@ -19,6 +19,8 @@
 		706208B72821974B00ABF84C /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208B62821974B00ABF84C /* RequestView.swift */; };
 		706208BB282198EA00ABF84C /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208BA282198EA00ABF84C /* TranscriptView.swift */; };
 		706208BD2821992B00ABF84C /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208BC2821992B00ABF84C /* RecordButtonView.swift */; };
+		706208C12821A91F00ABF84C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208C02821A91F00ABF84C /* LoginView.swift */; };
+		706208C32821B2B400ABF84C /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706208C22821B2B400ABF84C /* ProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		706208B62821974B00ABF84C /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		706208BA282198EA00ABF84C /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 		706208BC2821992B00ABF84C /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		706208C02821A91F00ABF84C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		706208C22821B2B400ABF84C /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +165,8 @@
 		706208AF2821720700ABF84C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				706208B62821974B00ABF84C /* RequestView.swift */,
-				706208BA282198EA00ABF84C /* TranscriptView.swift */,
-				706208BC2821992B00ABF84C /* RecordButtonView.swift */,
+				706208BF2821A90F00ABF84C /* LogIn */,
+				706208BE2821A90700ABF84C /* LoggedIn */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,25 @@
 				706208B3282173D300ABF84C /* SpeechHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		706208BE2821A90700ABF84C /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				706208BC2821992B00ABF84C /* RecordButtonView.swift */,
+				706208BA282198EA00ABF84C /* TranscriptView.swift */,
+				706208B62821974B00ABF84C /* RequestView.swift */,
+			);
+			path = LoggedIn;
+			sourceTree = "<group>";
+		};
+		706208BF2821A90F00ABF84C /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				706208C02821A91F00ABF84C /* LoginView.swift */,
+				706208C22821B2B400ABF84C /* ProfileImageView.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +334,8 @@
 				7062088628216EF500ABF84C /* ContentView.swift in Sources */,
 				706208BB282198EA00ABF84C /* TranscriptView.swift in Sources */,
 				706208BD2821992B00ABF84C /* RecordButtonView.swift in Sources */,
+				706208C32821B2B400ABF84C /* ProfileImageView.swift in Sources */,
+				706208C12821A91F00ABF84C /* LoginView.swift in Sources */,
 				7062088428216EF500ABF84C /* TriageRequestorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
