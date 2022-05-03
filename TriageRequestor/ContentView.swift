@@ -11,15 +11,20 @@ struct ContentView: View {
     @StateObject private var viewModel = RequestorViewModel()
     
     var body: some View {
+        Group {
         
-        if(viewModel.signedIn) {
-            RequestView()
-                .environmentObject(viewModel)
+            if(viewModel.signedIn) {
+                RequestView()
+                    .environmentObject(viewModel)
+            }
+            else {
+                LoginView()
+                    .environmentObject(viewModel)
+            }
         }
-        else {
-            LoginView()
-                .environmentObject(viewModel)
-        }
+            .onAppear {
+                viewModel.checkLogin()
+            }
     }
 }
 

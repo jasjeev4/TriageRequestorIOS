@@ -13,11 +13,11 @@ struct LoginView: View {
             HStack{
                 Spacer()
                 
-                ProfileImageView(imageName: "Jasjeev")
+                ProfileButtonView(imageName: "Jasjeev")
                 
                 Spacer()
                 
-                ProfileImageView(imageName: "Justin")
+                ProfileButtonView(imageName: "Justin")
                 
                 Spacer()
             }
@@ -25,11 +25,11 @@ struct LoginView: View {
             HStack{
                 Spacer()
                 
-                ProfileImageView(imageName: "Marc")
+                ProfileButtonView(imageName: "Marc")
                 
                 Spacer()
                 
-                ProfileImageView(imageName: "Tara")
+                ProfileButtonView(imageName: "Tara")
                 
                 Spacer()
             }

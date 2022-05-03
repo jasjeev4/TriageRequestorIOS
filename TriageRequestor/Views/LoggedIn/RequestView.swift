@@ -10,14 +10,29 @@ import SwiftUI
 struct RequestView: View {
     @EnvironmentObject var viewModel: RequestorViewModel
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
-        VStack {
-            TranscriptView()
-            
-            Spacer()
-            
-            RecordButtonView()
-                .padding(100)
+        NavigationView {
+        
+            VStack {
+                TranscriptView()
+                
+                Spacer()
+                
+                RecordButtonView()
+                    .padding(100)
+            }
+            .toolbar {
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                        Button(action: {
+                            viewModel.logout()
+                        }, label: {
+                            Image(systemName: "chevron.backward")
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        })
+                }
+            }
         }
     }
 }
