@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "T03BFMFP2-U02P35BR45B-8d9791764f94-192.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

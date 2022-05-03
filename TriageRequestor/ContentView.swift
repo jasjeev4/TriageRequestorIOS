@@ -11,16 +11,20 @@ struct ContentView: View {
     @StateObject private var viewModel = RequestorViewModel()
     
     var body: some View {
+        Group {
         
-        RequestView()
-            .environmentObject(viewModel)
-        
-        
-//        Text(viewModel.transcript)
-//            .padding()
-//            .onAppear {
-//                viewModel.speechRecognizer.record(to: $viewModel.transcript)
-//            }
+            if(viewModel.signedIn) {
+                RequestView()
+                    .environmentObject(viewModel)
+            }
+            else {
+                LoginView()
+                    .environmentObject(viewModel)
+            }
+        }
+            .onAppear {
+                viewModel.checkLogin()
+            }
     }
 }
 
