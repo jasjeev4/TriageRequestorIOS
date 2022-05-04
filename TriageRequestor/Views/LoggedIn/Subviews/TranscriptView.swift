@@ -15,7 +15,13 @@ struct TranscriptView: View {
         VStack {
             Spacer()
             
-            Text(viewModel.transcript)
+            VStack {
+                Text(viewModel.transcript)
+                    .font(Font.custom("IndieFlower", size: 30))
+                    .multilineTextAlignment(.leading)
+            }
+            .frame(minHeight: 500, maxHeight: 500)
+            .padding(20)
             
             Spacer()
         }

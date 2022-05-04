@@ -25,6 +25,9 @@
 		708D3B532821CBAA00BF4A49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 708D3B522821CBAA00BF4A49 /* Alamofire */; };
 		708D3B562821CC0D00BF4A49 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D3B552821CC0D00BF4A49 /* APIModel.swift */; };
 		708D3B592822C85100BF4A49 /* PostDesire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D3B582822C85100BF4A49 /* PostDesire.swift */; };
+		708D3B622822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
+		708D3B632822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
+		708D3B642822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,7 @@
 		706208C42821B52200ABF84C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		708D3B552821CC0D00BF4A49 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		708D3B582822C85100BF4A49 /* PostDesire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDesire.swift; sourceTree = "<group>"; };
+		708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		7062087728216EF500ABF84C = {
 			isa = PBXGroup;
 			children = (
+				708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */,
 				7062088228216EF500ABF84C /* TriageRequestor */,
 				7062089328216EF600ABF84C /* TriageRequestorTests */,
 				7062089D28216EF600ABF84C /* TriageRequestorUITests */,
@@ -343,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D3B622822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */,
 				7062088B28216EF600ABF84C /* Preview Assets.xcassets in Resources */,
 				7062088828216EF600ABF84C /* Assets.xcassets in Resources */,
 			);
@@ -352,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D3B632822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D3B642822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
