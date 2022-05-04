@@ -36,10 +36,12 @@ struct RequestView: View {
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
                     Button {
                     } label: {
-                        Image(viewModel.user!)
-                            .resizable()
-                            .frame(width: 30.0, height: 30.0)
-                            .clipShape(Circle())
+                        if(viewModel.email != nil) {
+                            Image(emailToName[viewModel.email!]!)
+                                .resizable()
+                                .frame(width: 30.0, height: 30.0)
+                                .clipShape(Circle())
+                        }
                         
                     }
                 }
