@@ -54,12 +54,16 @@ final class RequestorViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [self] in
             progressTime = progressTime + 0.01
             
-            if(showProgress == true && progressTime<3.0) {
-                runProgressTimer()
+            if(showProgress == true) {
+                if(progressTime<3.0) {
+                    runProgressTimer()
+                }
+                
+                else {
+                    postDesire()
+                }
             }
-            else {
-                postDesire()
-            }
+            
         }
     }
     
