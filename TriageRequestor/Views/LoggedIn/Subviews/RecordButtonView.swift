@@ -37,7 +37,7 @@ struct RecordButtonView: View {
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
                         if(viewModel.transcript != "") {
-                            viewModel.transcript = "‟" + viewModel.transcript + "”"
+                            viewModel.desire = "‟" + viewModel.transcript + "”"
                         }
                     }
                 }

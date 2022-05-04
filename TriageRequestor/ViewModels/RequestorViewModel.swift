@@ -41,7 +41,6 @@ final class RequestorViewModel: ObservableObject {
     
     
     func submitDesire() {
-        desire = transcript
         showProgress = true
         showCancelButton = true
         progressTime = 0.0
@@ -54,12 +53,16 @@ final class RequestorViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [self] in
             progressTime = progressTime + 0.01
             
-            if(showProgress == true && progressTime<3.0) {
-                runProgressTimer()
+            if(showProgress == true) {
+                if(progressTime<3.0) {
+                    runProgressTimer()
+                }
+                
+                else {
+                    postDesire()
+                }
             }
-            else {
-                postDesire()
-            }
+            
         }
     }
     
@@ -67,7 +70,7 @@ final class RequestorViewModel: ObservableObject {
         let postPath = TriageApi.postDesire()
         
         let params = [
-            "desire": desire,
+            "desire": transcript,
             "email": email!
         ]
         
@@ -170,7 +173,7 @@ final class RequestorViewModel: ObservableObject {
         speechRecognizer.stopRecording()
         recording = false
         showProgress = false
-        
+        desire = ""
         transcript = ""
     }
 }
