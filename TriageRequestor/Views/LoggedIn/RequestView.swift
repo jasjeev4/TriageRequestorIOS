@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct RequestView: View {
     @EnvironmentObject var viewModel: RequestorViewModel
@@ -16,12 +17,60 @@ struct RequestView: View {
         NavigationView {
         
             VStack {
+                
+                Spacer()
+                    
+                Group {
+            
+                    if(viewModel.showProgress)
+                    {
+                        ProgressView(value: viewModel.progressTime, total: 3.0)
+                            .tint(.green)
+                            //.offset(y: 50)
+                            .opacity(viewModel.showProgress ? 1 : 0)
+                    }
+                
+                    if(viewModel.recording)
+                    {
+                        ProgressView(value: viewModel.pulseProgressVal, total: 100)
+                            .tint(.gray)
+                            //.offset(y: 50)
+                            .opacity(viewModel.recording ? 1 : 0)
+                    }
+                    
+                    if(viewModel.showProgress == false && viewModel.recording == false) {
+                        ProgressView(value: 0, total: 100)
+                            .opacity(0)
+                    }
+                }
+                
                 TranscriptView()
                 
                 Spacer()
                 
+                Button(action: {
+                    viewModel.resetSpeech()
+                    // cancel submit to backend
+                    
+                }) {
+                    Text("CANCEL")
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(Color.white)
+                        .clipShape(Capsule())
+                    
+                }.opacity(viewModel.showProgress ? 1 : 0)
+            
+                Spacer()
+                
                 RecordButtonView()
-                    .padding(100)
+                    .padding(50)
+                    .opacity(viewModel.showRecord ? 1 : 0)
+                
+                Text("You didn't say anything.")
+                    .opacity(viewModel.saySomething ? 1 : 0)
+                
+                Spacer()
             }
             .toolbar {
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
@@ -45,6 +94,13 @@ struct RequestView: View {
                         
                     }
                 }
+            }
+            .toast(isPresenting: $viewModel.acceptedDesire) {
+                AlertToast(type: .complete(Color.green), title: "Got it!")
+            }
+            .toast(isPresenting: $viewModel.rejectedDesire){
+                // `.alert` is the default displayMode
+                AlertToast(type: .regular, title: "Sorry! 🙅 Try another request!")
             }
             
         }

@@ -16,12 +16,32 @@ struct RecordButtonView: View {
     var body: some View {
         
         Button(action: {
+            viewModel.showRecord = false
+            viewModel.recording = false
             // called after button tap complete
-            self.buttonTapped = false
-            viewModel.speechRecognizer.stopRecording()
-            
-            // submit to backend 
-            viewModel.submitDesire()
+            if(viewModel.transcript == "") {
+                viewModel.saySomething = true
+                viewModel.resetSpeech()
+            }
+            else {
+                viewModel.saySomething = false
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [self] in
+                
+                    self.buttonTapped = false
+                    viewModel.speechRecognizer.stopRecording()
+                    
+                    // submit to backend
+                    viewModel.submitDesire()
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [self] in
+                        if(viewModel.transcript != "") {
+                            viewModel.transcript = "‟" + viewModel.transcript + "”"
+                        }
+                    }
+                }
+            }
         }) {
             Image(systemName: "mic.circle.fill")
                 .resizable()
@@ -32,7 +52,10 @@ struct RecordButtonView: View {
         .foregroundColor(Color.black)
         .simultaneousGesture((LongPressGesture(minimumDuration: 0.1).onEnded({ _ in
             // actions during button hold
+            viewModel.saySomething = false
             self.buttonTapped = true
+            viewModel.recording = true
+            viewModel.resetPulse()
             viewModel.speechRecognizer.record(to: $viewModel.transcript)
         })))
     }
