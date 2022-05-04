@@ -28,6 +28,8 @@
 		708D3B622822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
 		708D3B632822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
 		708D3B642822D8EE00BF4A49 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708D3B612822D8EE00BF4A49 /* IndieFlower-Regular.ttf */; };
+		708D3B672823143200BF4A49 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 708D3B662823143200BF4A49 /* SwiftyJSON */; };
+		708D3B6A28231C4800BF4A49 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 708D3B6928231C4800BF4A49 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708D3B6A28231C4800BF4A49 /* AlertToast in Frameworks */,
+				708D3B672823143200BF4A49 /* SwiftyJSON in Frameworks */,
 				708D3B532821CBAA00BF4A49 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +260,8 @@
 			name = TriageRequestor;
 			packageProductDependencies = (
 				708D3B522821CBAA00BF4A49 /* Alamofire */,
+				708D3B662823143200BF4A49 /* SwiftyJSON */,
+				708D3B6928231C4800BF4A49 /* AlertToast */,
 			);
 			productName = TriageRequestor;
 			productReference = 7062088028216EF500ABF84C /* TriageRequestor.app */;
@@ -331,6 +337,8 @@
 			mainGroup = 7062087728216EF500ABF84C;
 			packageReferences = (
 				708D3B512821CBAA00BF4A49 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				708D3B652823143200BF4A49 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				708D3B6828231C4800BF4A49 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 7062088128216EF500ABF84C /* Products */;
 			projectDirPath = "";
@@ -725,6 +733,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		708D3B652823143200BF4A49 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		708D3B6828231C4800BF4A49 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -732,6 +756,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 708D3B512821CBAA00BF4A49 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		708D3B662823143200BF4A49 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708D3B652823143200BF4A49 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		708D3B6928231C4800BF4A49 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 708D3B6828231C4800BF4A49 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

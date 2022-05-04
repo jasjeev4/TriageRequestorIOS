@@ -8,6 +8,24 @@
         "revision" : "354dda32d89fc8cd4f5c46487f64957d355f53d8",
         "version" : "5.6.1"
       }
+    },
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6f0c1da59221ff337ebab856e13c7fcd26f9a426"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+        "version" : "5.0.1"
+      }
     }
   ],
   "version" : 2

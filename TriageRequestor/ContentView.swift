@@ -24,6 +24,7 @@ struct ContentView: View {
         }
             .onAppear {
                 viewModel.checkLogin()
+                viewModel.runPulse() 
             }
     }
 }
