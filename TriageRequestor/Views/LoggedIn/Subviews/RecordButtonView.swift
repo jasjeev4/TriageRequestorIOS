@@ -21,7 +21,7 @@ struct RecordButtonView: View {
             viewModel.speechRecognizer.stopRecording()
             
             // submit to backend 
-            
+            viewModel.submitDesire()
         }) {
             Image(systemName: "mic.circle.fill")
                 .resizable()
