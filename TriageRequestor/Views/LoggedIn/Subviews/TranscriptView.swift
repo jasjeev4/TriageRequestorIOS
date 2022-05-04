@@ -16,7 +16,14 @@ struct TranscriptView: View {
             Spacer()
             
             VStack {
-                if(viewModel.transcript != "") {
+                if(viewModel.desire != "") {
+                    Text(viewModel.desire)
+                        .font(Font.custom("IndieFlower", size: 30))
+                        .multilineTextAlignment(.leading)
+                        .background(viewModel.recording ? .white : .black)
+                        .foregroundColor(viewModel.recording ? .black : .white)
+                }
+                else if(viewModel.transcript != "") {
                     Text(viewModel.transcript)
                         .font(Font.custom("IndieFlower", size: 30))
                         .multilineTextAlignment(.leading)

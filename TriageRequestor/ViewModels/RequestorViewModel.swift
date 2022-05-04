@@ -41,7 +41,6 @@ final class RequestorViewModel: ObservableObject {
     
     
     func submitDesire() {
-        desire = transcript
         showProgress = true
         showCancelButton = true
         progressTime = 0.0
@@ -71,7 +70,7 @@ final class RequestorViewModel: ObservableObject {
         let postPath = TriageApi.postDesire()
         
         let params = [
-            "desire": desire,
+            "desire": transcript,
             "email": email!
         ]
         
@@ -174,7 +173,7 @@ final class RequestorViewModel: ObservableObject {
         speechRecognizer.stopRecording()
         recording = false
         showProgress = false
-        
+        desire = ""
         transcript = ""
     }
 }

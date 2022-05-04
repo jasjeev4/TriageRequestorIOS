@@ -17,58 +17,58 @@ struct RequestView: View {
         NavigationView {
         
             VStack {
-                
                 Spacer()
-                    
-                Group {
-            
-                    if(viewModel.showProgress)
-                    {
-                        ProgressView(value: viewModel.progressTime, total: 3.0)
-                            .tint(.green)
-                            //.offset(y: 50)
-                            .opacity(viewModel.showProgress ? 1 : 0)
-                    }
+                    .frame(height: 50)
                 
-                    if(viewModel.recording)
-                    {
-                        ProgressView(value: viewModel.pulseProgressVal, total: 100)
-                            .tint(.gray)
-                            //.offset(y: 50)
-                            .opacity(viewModel.recording ? 1 : 0)
-                    }
-                    
-                    if(viewModel.showProgress == false && viewModel.recording == false) {
-                        ProgressView(value: 0, total: 100)
-                            .opacity(0)
-                    }
+                ZStack {
+                    ProgressView(value: viewModel.progressTime, total: 3.0)
+                        .tint(.green)
+                        //.offset(y: 50)
+                        .opacity(viewModel.showProgress ? 1 : 0)
+            
+                    ProgressView(value: viewModel.pulseProgressVal, total: 100)
+                        .tint(.gray)
+                        //.offset(y: 50)
+                        .opacity(viewModel.recording && viewModel.transcript == "" ? 1 : 0)
                 }
                 
-                TranscriptView()
-                
-                Spacer()
-                
-                Button(action: {
-                    viewModel.resetSpeech()
-                    // cancel submit to backend
+                Group {
                     
-                }) {
-                    Text("CANCEL")
+                    Spacer()
+                    
+                    Text("Submitting:")
+                        .font(Font.custom("IndieFlower", size: 42))
                         .padding()
-                        .background(Color.red)
-                        .foregroundColor(Color.white)
-                        .clipShape(Capsule())
+                        .foregroundColor(Color.green)
+                        .opacity(viewModel.showProgress ? 1 : 0)
+                
+                    TranscriptView()
                     
-                }.opacity(viewModel.showProgress ? 1 : 0)
-            
-                Spacer()
+                    Spacer()
+                    
+                    Button(action: {
+                        viewModel.resetSpeech()
+                        // cancel submit to backend
+                        
+                    }) {
+                        Text("Cancel?")
+                            .font(Font.custom("GloriaHallelujah", size: 30))
+                            .padding()
+                            .background(Color.black)
+                            .foregroundColor(Color.red)
+                            .clipShape(Capsule())
+                        
+                    }.opacity(viewModel.showProgress ? 1 : 0)
                 
-                RecordButtonView()
-                    .padding(50)
-                    .opacity(viewModel.showRecord ? 1 : 0)
-                
-                Text("You didn't say anything.")
-                    .opacity(viewModel.saySomething ? 1 : 0)
+                    Spacer()
+                    
+                    RecordButtonView()
+                        .padding(50)
+                        .opacity(viewModel.showRecord ? 1 : 0)
+                    
+                    Text("You didn't say anything.")
+                        .opacity(viewModel.saySomething ? 1 : 0)
+                }
                 
                 Spacer()
             }
