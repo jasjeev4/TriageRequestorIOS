@@ -3,7 +3,7 @@
 The iOS app for Triage allows users make supported requests with speech in natural language. Requests are assigned directly to assignees.  
 
 <p align="row">
-<img src= "https://jsanand.com/assets/img/triagerequestor.gif" width="300">
+<img src= "https://jsanand.com/assets/img/triagerequestor.gif" width="800">
 </p>
 
 
